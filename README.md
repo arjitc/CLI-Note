@@ -26,4 +26,6 @@ Syntax
 
 Example
 
-    note read nano
+     [root@box ~]# note read nano
+     test
+
