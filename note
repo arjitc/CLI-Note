@@ -9,12 +9,13 @@ then
 fi
 if [ -z ${FILE} ];
 then
-        echo "ERROR: File is missing";
+        echo "ERROR: Filename is missing";
         exit
 fi
 if [ "$COMMAND" == "set" ]; then
         NOTE=$3
         echo "$NOTE" > "$NOTE_DIR/$FILE"
+        echo "Success, note set for file $FILE"
 fi
 if [ "$COMMAND" == "read" ]; then
         cat "$NOTE_DIR/$FILE"
